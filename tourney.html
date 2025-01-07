@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments | WSC Esports</title>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <!-- Custom CSS -->
+    <script src="/js/auth.js"></script>
+    <style>
+
+        .swiper-container {
+            width: 90%;
+            margin: 2rem auto;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .swiper-slide:hover {
+            transform: scale(1.03);
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .swiper-slide h2 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .swiper-slide p {
+            margin: 0 1rem 1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #222;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/pages/homepage.html">HOME</a></li> 
+                <li><a href="/pages/news.html">NEWS</a></li> 
+                <li><a href="/pages/tourney.html">TOURNEMENTS</a></li>
+                <li><a href="/pages/gallery.html">GALLERY</a></li>
+                <li><a href="/pages/stats.html">PLAYERS</a></li>
+                <li><a href="/pages/shop.html">STORE</a></li>
+                <li><a href="/pages/contacts.html">CONTACT US</a></li>
+                <li id="community-link" class="hidden"><a href="/pages/community.html">COMMUNITY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Title Section -->
+    <section class="title-section">
+        <h1>Upcoming Tournaments</h1>
+    </section>
+
+    <!-- Swiper Slider Section -->
+    <section class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Tournament 1 -->
+            <div class="swiper-slide">
+
+                <img src="/images/web-image-preview-NEW.png" alt="Global Championship 2024">
+                <h2>Global Championship 2024</h2>
+                <p><strong>Date:</strong> December 15, 2024</p>
+                <p>Join teams from around the world in this exciting global showdown, with top players competing for the grand prize.</p>
+            </div>
+
+            <!-- Tournament 2 -->
+            <div class="swiper-slide">
+                <img src="/images/SCR-20241220-maba.png" alt="Winter Invitational">
+                <h2>Winter Invitational</h2>
+                <p><strong>Date:</strong> January 10, 2025</p>
+                <p>The Winter Invitational brings together the best local teams to battle for supremacy in a thrilling single-elimination format.</p>
+            </div>
+
+            <!-- Tournament 3 -->
+            <div class="swiper-slide">
+                <img src="/images/Junior tournament 2023-24 square.png" alt="Spring Showdown">
+                <h2>Spring Showdown</h2>
+                <p><strong>Date:</strong> March 20, 2025</p>
+                <p>Our annual Spring Showdown is back! Watch top teams face off in an intense competition to claim the Spring Champion title.</p>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 WSC Esports. All rights reserved.</p>
+    </footer>
+
+    <!-- Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | WSC Esports</title>
+    <script src="/js/auth.js"></script>
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="/pages/homepage.html">HOME</a></li> 
+            <li><a href="/pages/news.html">NEWS</a></li> 
+            <li><a href="/pages/tourney.html">TOURNEMENTS</a></li>
+            <li><a href="/pages/gallery.html">GALLERY</a></li>
+            <li><a href="/pages/stats.html">PLAYERS</a></li>
+            <li><a href="/pages/shop.html">STORE</a></li>
+            <li><a href="/pages/contacts.html">CONTACT US</a></li>
+            <li id="community-link" class="hidden"><a href="/pages/community.html">COMMUNITY</a></li>
+    </nav>
+</header>
+
+<!-- Title Section -->
+<section class="title-section">
+    <h1>Latest News</h1>
+</section>
+
+<!-- Carousel Section -->
+<section class="carousel">
+    <div class="carousel-content">
+        <div class="carousel-item">
+            <img src="/images/web-header-v2.png" alt="Tournament Announcement">
+            <h2>New Tournament Announced</h2>
+            <p><small>Published on November 14, 2024</small></p>
+            <p>WSC Esports is excited to announce a new tournament this December. Prepare your teams for a thrilling competition, with top prizes for winners. Stay tuned for more details!</p>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/dsh-junior-esports-twitter-800x415-quotes so much fun.png" alt="Player Spotlight">
+            <h2>Player Spotlight: Rising Star</h2>
+            <p><small>Published on November 7, 2024</small></p>
+            <p>Meet Alex "Blaze" Smith, a new player making waves in the esports community. His journey from amateur to pro has been inspirational. Read more about his story and accomplishments.</p>
+        </div>
+        <div class="carousel-item">
+            <img src="/images/dsh-junior-esports-twitter-800x415-quotes teacher one student 2.png" alt="Season Highlights">
+            <h2>Season Highlights Recap</h2>
+            <p><small>Published on October 29, 2024</small></p>
+            <p>As the season wraps up, take a look back at some of the most exciting moments and highlights. From record-breaking plays to epic comebacks, this season has been one to remember.</p>
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 WSC Esports. All rights reserved.</p>
+</footer>
+
+<script>
+    // JavaScript for Carousel
+    const carouselContent = document.querySelector('.carousel-content');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const translateX = -currentIndex * 100;
+        carouselContent.style.transform = `translateX(${translateX}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+    });
+</script>
+
+</body>
+</html>

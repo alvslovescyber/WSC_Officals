@@ -1,0 +1,459 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1f2b;
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Navigation Menu */
+header {
+    background-color: #14161c;
+    overflow: hidden;
+    color: #f0f0f0;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+/* Title Section */
+.Title {
+    background-color: #161b22;
+    color: red;
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Cambria', 'Georgia', serif;
+}
+
+.Title h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid red;
+    display: inline-block;
+}
+
+/* Image Section */
+.image-section {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #222533;
+}
+
+.image-section div {
+    background-color: #2d2f3f;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.image-section div:hover {
+    transform: translateY(-10px);
+    background-color: red;
+    color: #000;
+}
+
+.image-section img {
+    width: 65%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Lower Text Section */
+.lower-section {
+    background-color: #1c1f2b;
+    padding: 100px;
+    font-size: 15px;
+    text-align: center;
+    color: #f0f0f0;
+    line-height: 1.8;
+}
+
+.lower-section ul li {
+    list-style-type: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    color: red;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #222533;
+}
+
+.contact-details, .contact-form {
+    width: 40%;
+    padding: 20px;
+    background-color: #2d2f3f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-details h2, .contact-form h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1c1f2b;
+    color: #f0f0f0;
+}
+
+.contact-form button {
+    background-color: red;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e68a00;
+    color: #fff;
+}
+
+/* Stats Player Images*/
+/* Player Image Styling */
+
+
+
+.player-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #1c1f2b;
+}
+
+/* Title Section */
+.title-section {
+    background-color: #161b22;
+    color: red;
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0;
+    border-bottom: 2px solid red;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Stat Card */
+.stat-card {
+    background-color: #2d2f3f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: inherit;
+    text-decoration: none; /* Removes underline */
+}
+
+/* Hover Effect on Stat Card */
+.stat-card:hover {
+    transform: scale(1.05);
+    background-color: red;
+    color: #000;
+}
+
+/* Headings and Paragraphs in Stat Card */
+.stat-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.stat-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Stat Card List */
+.stat-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stat-card ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+}
+
+/* Link Styling for Stat Card */
+.stats-section a.stat-card {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Inherits color from parent to prevent link color changes */
+}
+
+/* Footer Section */
+footer {
+    background-color: #14161c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1f2b;
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #14161c;
+    color: #f0f0f0;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+/* Title Section */
+.title-section {
+    background-color: #161b22;
+    color: red;
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid red;
+}
+
+/* Signup Section */
+.signup-section {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2d2f3f;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.signup-section h1 {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-section .form-group {
+    margin-bottom: 15px;
+}
+
+.signup-section label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.signup-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1c1f2b;
+    color: #f0f0f0;
+}
+
+.signup-section button {
+    width: 100%;
+    background-color: red;
+    color: #000;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.signup-section button:hover {
+    background-color: #e68a00;
+    color: #fff;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#message.error {
+    color: red;
+}
+
+#message.success {
+    color: green;
+}
+
+
+
+
+.store-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #1c1f2b;
+}
+
+.product-card {
+    background-color: #2d2f3f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    color: red;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+.product-card button {
+    background-color: red;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #e68a00;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #14161c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0)
+}
+

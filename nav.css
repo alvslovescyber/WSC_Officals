@@ -1,0 +1,92 @@
+/* Header Styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #14161c;
+    color: #f0f0f0;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Logo Styles */
+#logo img {
+    height: 50px; /* Adjust logo height as needed */
+    width: auto;  /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image to fit perfectly */
+}
+
+/* Navigation Bar */
+#nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center; /* Centers the navigation items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px; /* Space between items */
+}
+
+#nav ul li {
+    position: relative;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#nav ul li a:hover,
+#nav ul li a:focus {
+    color: red;
+    text-shadow: 0 0 10px red;
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+/* Submenu Styles */
+#nav ul li ul {
+    display: none; /* Hide the submenu by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #14161c;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    z-index: 1;
+}
+
+#nav ul li:hover > ul {
+    display: block; /* Show submenu on hover */
+}
+
+#nav ul li ul li {
+    padding: 5px 0;
+}
+
+#nav ul li ul li a {
+    padding: 10px;
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+#nav ul li ul li a:hover {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+/* Hidden Community Link */
+#community-link.hidden {
+    display: none; /* Hide community link by default */
+}
